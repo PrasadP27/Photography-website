@@ -140,6 +140,7 @@ p {
 /* about */
 
 #about {
+    overflow: hidden;
     align-items: center;
 }
 
@@ -157,8 +158,8 @@ p {
 /* gallery */
 
 #gallery {
-    background: #101010;
     padding: 110px;
+    overflow: hidden;
 }
 
 #gallery h1 {
@@ -172,6 +173,7 @@ p {
 #services {
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .services-content h3 {
