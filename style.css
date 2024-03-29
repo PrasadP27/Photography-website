@@ -78,10 +78,10 @@ p {
 /* home */
 
 #home {
+    overflow: hidden;
     position: relative;
     height: 100vh;
     width: 100%;
-    /* background-image: url("/images/2.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -171,7 +171,7 @@ p {
 /* services */
 
 #services {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     overflow: hidden;
 }
@@ -197,7 +197,7 @@ p {
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.720);
     background-blend-mode: darken;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     color: var(--bs-white);
 }
@@ -265,4 +265,71 @@ footer a {
 
 footer .follow a img {
     height: 25px;
+}
+
+@media (max-width: 768px){
+    p{
+        font-size: 13px;
+    }
+
+    .site-btn{
+        font-size: 13px;
+        padding: 15px;
+    }
+
+    section, #gallery{
+        padding: 80px 50px;
+    }
+
+    .services-container, .services-content, .about-container, .contact-container, .contact-form, footer, .about-img {
+        text-align: center;
+    }
+
+    #about img{
+        width: 400px;
+        border-radius: 15px;
+    }
+
+    footer h2{
+        font-size: 22px;
+    }
+    footer h4{
+        font-size: 18px;
+    }
+
+    footer .follow a img{
+        height: 20px;
+    }
+}
+
+@media (max-width: 576px){
+    section, #gallery{
+        padding: 80px 20px;
+    }
+
+    #home {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    #gallery h1{
+        text-align: center;
+    }
+
+    .services-container {
+        margin-top: 20px;
+    }
+
+    #about img{
+        width: 300px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 350px){
+    #about img{
+        width: 200px;
+        border-radius: 8px;
+    }
 }

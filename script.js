@@ -1,12 +1,23 @@
 // for navbar 
 let nav = document.querySelector('#navbar')
 window.onscroll = () => {
-    if(document.documentElement.scrollTop > 20){
+    if (document.documentElement.scrollTop > 20) {
         nav.classList.add('onScroll')
-    } else{
+    } else {
         nav.classList.remove('onScroll')
     }
 }
+
+//for dropdown navbar
+
+let navbar = document.querySelectorAll('.nav-link')
+let navCollapse = document.querySelector('.navbar-collapse.collapse')
+
+navbar.forEach((a) => {
+    a.addEventListener('click', function(){
+        navCollapse.classList.remove('show')
+    })
+})
 
 //for animation
 
@@ -39,7 +50,7 @@ t1Hero.from('#home a', {
 // about
 
 let t1About = gsap.timeline({
-    scrollTrigger:{
+    scrollTrigger: {
         trigger: '#about',
         start: '10% 60%',
         end: '10% 60%',
@@ -65,7 +76,7 @@ t1About.from('.about-img', {
 //gallery
 
 let t1Gallery = gsap.timeline({
-    scrollTrigger:{
+    scrollTrigger: {
         trigger: '#gallery',
         start: '10% 40%',
         end: '10% 40%',
@@ -99,7 +110,7 @@ t1Gallery.from('.column-3', {
 // services
 
 let t1ervices = gsap.timeline({
-    scrollTrigger:{
+    scrollTrigger: {
         trigger: '#services',
         start: '10% 60%',
         end: '10% 60%',
@@ -113,7 +124,7 @@ t1ervices.from('.services-content', {
     xPercent: -30,
     ease: "back.out(1.7)",
     duration: 0.8
-},'services')
+}, 'services')
 
 t1ervices.from('.services-container', {
     opacity: 0,
@@ -126,7 +137,7 @@ t1ervices.from('.services-container', {
 // contact
 
 let t1Contact = gsap.timeline({
-    scrollTrigger:{
+    scrollTrigger: {
         trigger: '#contact',
         start: '10% 60%',
         end: '10% 60%',
