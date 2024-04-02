@@ -182,7 +182,7 @@ var t1Color = gsap.timeline({
         start: "60% 40%",
         end: "60% 0%",
         // markers: true,
-        scrub: 1,
+        scrub: 2,
         duration: 1
     }
 })
@@ -197,7 +197,7 @@ var t2Color = gsap.timeline({
         start: "70% 30%",
         end: "70% 0%",
         // markers: true,
-        scrub: 1,
+        scrub: 2,
         duration: 1
     }
 })
